@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(213, 193, 221);
+    color: rgb(56, 20, 89);
+}
+
+.container {  display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1fr 0.3fr;
+    grid-template-rows: 0.8fr 3fr 0.30fr 0.3fr 1.5fr 3fr;
+    gap: 1px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  
+
+.box {
+    background-image: linear-gradient(rgb(137, 56, 191),rgb(182, 106, 214));
+    grid-row: 1/3;
+    grid-column: 1/2;
+    border-style: inset;
+    border-color: rgb(247, 255, 137);
+    border-width: 10px;
+    border-radius: 40px;
+    /* I chose a brighter purple as part of the sky, the border color is the yellow of the star. */
+
+}
+
+.box2 {
+    background-image: linear-gradient(rgb(112, 79, 179),rgb(160, 149, 221));
+    grid-row: 2/4;
+    grid-column: 2/3;
+    border-style: inset;
+    border-color: rgb(247, 255, 137);
+    border-width: 10px;
+    border-radius: 40px;
+    /* As box went on, the color of the sky changed, with bluer purple becoming the dominant color, the border color is the yellow of the star. */
+
+}
+
+.box3 {
+    background-image: linear-gradient(rgb(25, 57, 154),rgb(118, 118, 177));
+    grid-row: 2/5;
+    grid-column: 3/4;
+    border-style: inset;
+    border-color: rgb(247, 255, 137);
+    border-width: 10px;
+    border-radius: 40px;
+    /* Dark blue appears at the end of the sky (the very edge of the box), the border color is the yellow of the star. */
+
+}
+
+.box4 {
+    background-image: linear-gradient( rgb(212, 129, 46),rgb(151, 191, 227));
+    grid-row: 6/8;
+    grid-column: 1/2;
+    border-style: inset;
+    border-color: rgb(162, 235, 186);
+    border-width: 10px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    /* At the bottom of the sky, they all appear in the same gradient of color -- orange to pale blue. The border color is the most natural green */
+
+}
+
+.box5 {
+    background-image: linear-gradient(rgb(217, 124, 62),rgb(175, 207, 246));
+    grid-row: 6/8;
+    grid-column: 2/3;
+    border-style: inset;
+    border-color: rgb(162, 235, 186);
+    border-width: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* At the bottom of the sky, they all appear in the same gradient of color -- orange to pale blue. The border color is the most natural green */
+
+}
+
+.box6 {
+    background-image: linear-gradient(rgb(227, 143, 70),rgb(158, 194, 244));
+    grid-row: 6/8;
+    grid-column: 3/4;
+    border-style: inset;
+    border-color: rgb(162, 235, 186);
+    border-width: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* At the bottom of the sky, they all appear in the same gradient of color -- orange to pale blue. The border color is the most natural green */
+
+}
+
+/* My main idea was the color of the sky to arrange the colors of these boxes, from high to low, and over time, the height of the sky, slowly taking on the colors in the real world. I used gradients to get closer to its authenticity. The top three boxes represent the upper half of the sky, closer to black, but because there is no complete sunset, they are still closer to black purple blue. I've made the round edges bright yellow, because at this point in the sky, there are already stars. The bottom three boxes are what the setting sun looks like at sea level at ground level. The top half is reddish orange, the color of the sun setting, and the bottom half is pale blue, the color of the sea, and they blend together. I used green for the border, because my subject is nature, and green is the color of nature. And unlike the top three boxes, the bottom two angles are right angles, which is visually a straight line, because the sea is flat as far as we can see. */
