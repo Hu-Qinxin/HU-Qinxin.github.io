@@ -12,7 +12,7 @@
 :root{
   /* first two colours come from Kuroi's Manga Pallete Palette */
   /* https://lospec.com/palette-list/manga-pallete */
-  --col-01:#171219;
+  --col-01:#2d352f;
   --col-02:#f2fbeb;
   --col-03:#aecac3;
   --col-04:#b6e878;
@@ -88,7 +88,10 @@ li ul{
 }
 
 #mode-button{
-  border: 5px solid #617a85;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .1);
+  border: 3px solid #6ab87d;
+  border-radius: 15%;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   text-transform: uppercase;
@@ -96,8 +99,57 @@ li ul{
   margin: 10px;
   cursor: pointer;
   transition: color 0.5s linear;
+  transition: 0.4s;
 }
 /* I've got an obvious button here, and when I click it will animate the toggle effect to make it look smoother. */
+
+#mode-button:hover{
+  z-index: 1;
+  border-color: transparent;
+  background: linear-gradient(
+    90deg,
+    #f9f0c2,
+    #d6eda9,
+    #abe7ff,
+    #dd96da,
+    #f3b1b1,
+    #edf1a9
+  );
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+@keyframes glow{
+
+  from{
+    background-position: 0%;
+  }
+
+  to{
+    background-position: 400%;
+  }
+}
+
+#mode-button::before{
+  content: '';
+  position: inherit;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: inherit;
+  filter: blur(36px);
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+
+#mode-button:hover::before{
+  opacity: 1;
+  z-index: -1;
+}
+/* I have a hover button with dynamic properties. When the mouse hovers over the button, its background color, which is a dynamic gradient, is revealed. Additionally, the button has an animation effect that makes it appear to protrude, as evidenced by the shadow it casts */
+
 
 /* code for loading page */
 
@@ -113,6 +165,9 @@ li ul{
   width: 100px;
   height: 30px;
   background: #cce4f2;
+  border: 25%;
+  border-color: #b6e878;
+  border-radius: 25px;
   transition-property: width;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
