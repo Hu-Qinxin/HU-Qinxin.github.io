@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Media Player Experiment</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <video id="video" width="100%" height="100%" poster="IMG_4320.jpg" style="clear:both;display:block;margin:auto">
+          <source src="e4.MP4" type="video/mp4">
+      </video>
+      <div id="buttons">
+          <div class="button" title="play" onclick="play()">
+            <img src="./icons/play.svg" alt="">
+          </div>
+          <div class="button" title="stop" onclick="pause()">
+            <img src="./icons/pause.svg" alt="">
+          </div>
+          <div class="button" title="fastForward" onclick="forward()">
+            <img src="./icons/fastForward.svg" alt="">
+          </div>
+          <div class="button" title="rewind" onclick="rewind()">
+            <img src="./icons/rewind.svg" alt="">
+          </div>
+          <div id="unmute" class="button" title="mute" onclick="mute()">
+            <img src="./icons/unmute.svg" alt="">
+          </div>
+          <div id="mute" class="button" title="open" onclick="mute()">
+            <img src="./icons/mute.svg" alt="">
+          </div>
+          <div id="all" class="button" title="fullScreen" onclick="all()">
+            <img src="./icons/fullScreen.svg" alt="">
+          </div>
+          <span>progress</span>
+          <progress value="0" id="progress">
+          </progress>
+          <span >volume</span>
+          <input type="range" id="ran" value="50" min="0" max="100" onchange="setVolume()"/>
+      </div>
+      <!-- To help users understand the purpose of each button icon, a comment is displayed when the mouse is placed over it. -->
+  </div>
+  </body>
+</html>
+
+<script src="playerControls.js"></script>
