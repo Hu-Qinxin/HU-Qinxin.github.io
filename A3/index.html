@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="picture">
+        <div id="main">
+            <div id="Northern-Territory">
+                <span class="text1" id="text1"></span>
+                <div id="Northern-Territory-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#Northern-Territory-detail','NorthernTerritoryStatus')">
+                        <img src="./images/Northern Territory.webp">
+                        <!-- https://www.britannica.com/place/Northern-Territory -->
+                    </a>
+                </div>
+            </div>
+            <div id="Queensland">
+                <span class="text2" id="text2"></span>
+                <div id="Queensland-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#Queensland-detail','QueenslandStatus')">
+                        <img src="./images/Queensland.jpg">
+                        <!-- https://peakvisor.com/adm/queensland.html -->
+                    </a>
+                </div>
+            </div>
+            <div id="Western-Australia">
+                <span class="text3" id="text3"></span>
+                <div id="Western-Australia-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#Western-Australia-detail','WesternAustraliaStatus')">
+                        <img src="./images/Western Australia.jpg">
+                        <!-- https://www.delicious.com.au/travel/australia/article/travelling-gascoyne-region-western-australia/sgo8eva3 -->
+                    </a>
+                </div>
+            </div>
+            <div id="south-Australia">
+                <span class="text4" id="text4"></span>
+                <div id="south-Australia-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#south-Australia-detail','southAustraliaStatus')">
+                        <img src="./images/south Australia.jpg">
+                        <!-- https://australiayourway.com/south-australia/ -->
+                    </a>
+                </div>
+            </div>
+            <div id="New-south-Wales">
+                <span class="text5" id="text5"></span>
+                <div id="New-south-Wales-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#New-south-Wales-detail','NewSouthWalesStatus')">
+                        <img src="./images/New south Wales.jpg">
+                        <!-- https://www.klook.com/en-AU/city/10000058-new-south-wales-things-to-do/ -->
+                    </a>
+                </div>
+            </div>
+            <div id="Victoria">
+                <span class="text6" id="text6"></span>
+                <div id="Victoria-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#Victoria-detail','VictoriaStatus')">
+                        <img src="./images/Victoria.png">
+                        <!-- https://www.ptv.vic.gov.au/more/travelling-on-the-network/visiting-melbourne-and-victoria/ -->
+                    </a>
+                </div>
+            </div>
+            <div id="Tasmania">
+                <span class="text7" id="text7"></span>
+                <div id="Tasmania-img" class="state-img">
+                    <a href="javascript:void(0)" onclick="jump('detail.html#Tasmania-detail','TasmaniaStatus')">
+                        <img src="./images/Tasmania.jpg">
+                        <!-- https://misstourist.com/best-things-to-do-in-tasmania-australia/ -->
+                    </a>
+                </div>
+            </div>
+            <!-- I have linked each state with text. Using "jump" to link images and text, so 
+                            that a single click on a state will take the viewer to the state's description, 
+                            saves the viewer time and eliminates searching all over the screen for the section they need. -->
+        </div>
+        <a href="./detail.html#design-decisions" class="btn">Design Decisions</a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
